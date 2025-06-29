@@ -36,6 +36,12 @@ const arr1 = [1, 2];
 const arr2 = [...arr1, 3, 4]; 
 console.log(arr2);
 
+//rest operator
+function sum(...numbers) {                    //reduce terates over the array elements in ascending-index order, accumulating them into a single value. 
+  return numbers.reduce((a, b) => a - b, 0);  //0 + 5 = 5
+}                                             //5 + 10 = 15
+console.log(sum(5, 10, 20));                 //15 + 20 = 35
+
 
 //json
 const user = { name: "Asif", age: 25 };
@@ -57,4 +63,8 @@ async function fetchUser() {
 }
 fetchUser();
 console.log("I am last line");
+
+//module
+import { add } from './export.js';
+console.log(add(5,7))
 
