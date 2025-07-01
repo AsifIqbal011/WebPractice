@@ -1,4 +1,6 @@
- 
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+
 var name = "Asif";    // older way
 let age = 25;         // modern
 const country = "BD"; // cannot be reassigned
@@ -68,3 +70,15 @@ console.log("I am last line");
 import { add } from './export.js';
 console.log(add(5,7))
 
+function BMICalculator(w,h){
+  let bmi=w/(h*h);
+  return bmi;
+}
+
+
+
+let weight= prompt("Enter your weight in kg: ");
+let height= prompt("Enter your height in metre: ");
+
+let BMI=BMICalculator(weight,height);
+console.log(BMI.toFixed(3));
