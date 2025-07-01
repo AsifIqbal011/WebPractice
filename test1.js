@@ -81,4 +81,4 @@ let weight= prompt("Enter your weight in kg: ");
 let height= prompt("Enter your height in metre: ");
 
 let BMI=BMICalculator(weight,height);
-console.log(BMI.toFixed(3));
+console.log(BMI.toFixed(4));
